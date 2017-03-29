@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SMT-Ii-Bxn">
+                                <rect key="frame" x="0.0" y="34" width="600" height="150"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDK-EY-fVx">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="sDK-EY-fVx" secondAttribute="height" multiplier="1:1" id="Xq6-iF-9Ke"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Xq6-iF-9Ke"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTF-fx-oQT">
+                                        <rect key="frame" x="150" y="0.0" width="150" height="150"/>
+                                        <color key="backgroundColor" red="0.74509803919999995" green="0.0" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="vTF-fx-oQT" secondAttribute="height" multiplier="13:15" id="5rf-k3-M10"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="5rf-k3-M10"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="07s-i3-UpC">
+                                        <rect key="frame" x="300" y="0.0" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="07s-i3-UpC" secondAttribute="height" multiplier="17:15" id="DfN-i0-4OJ"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="DfN-i0-4OJ"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uxT-pq-Kth">
+                                        <rect key="frame" x="450" y="0.0" width="150" height="150"/>
+                                        <color key="backgroundColor" red="0.38431372549999998" green="0.62352941179999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="uxT-pq-Kth" secondAttribute="height" multiplier="1:1" id="u8h-5O-Lba"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="uxT-pq-Kth" firstAttribute="width" secondItem="sDK-EY-fVx" secondAttribute="width" id="7SQ-dE-KbI"/>
+                                    <constraint firstItem="vTF-fx-oQT" firstAttribute="width" secondItem="sDK-EY-fVx" secondAttribute="width" id="FJL-Kf-ZWU"/>
+                                    <constraint firstItem="uxT-pq-Kth" firstAttribute="height" secondItem="sDK-EY-fVx" secondAttribute="height" id="REf-o6-Bo5"/>
+                                    <constraint firstItem="vTF-fx-oQT" firstAttribute="height" secondItem="sDK-EY-fVx" secondAttribute="height" id="TfY-Zo-Yo9"/>
+                                    <constraint firstItem="07s-i3-UpC" firstAttribute="height" secondItem="sDK-EY-fVx" secondAttribute="height" id="Ydg-I3-jVT"/>
+                                    <constraint firstItem="07s-i3-UpC" firstAttribute="width" secondItem="sDK-EY-fVx" secondAttribute="width" id="uI3-wG-WQ1"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="SMT-Ii-Bxn" secondAttribute="trailing" id="3dx-lj-1KD"/>
+                            <constraint firstItem="SMT-Ii-Bxn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xbe-vS-6Bh"/>
+                            <constraint firstItem="SMT-Ii-Bxn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="t2j-xT-0NZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="V1" destination="sDK-EY-fVx" id="duM-5T-hci"/>
+                        <outlet property="V2" destination="vTF-fx-oQT" id="Yiq-3s-Vh9"/>
+                        <outlet property="V3" destination="07s-i3-UpC" id="2BY-NU-F1a"/>
+                        <outlet property="V4" destination="uxT-pq-Kth" id="7MX-5V-7rP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
